@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS usuario (
+    id VARCHAR(28) NOT NULL,
+    nome VARCHAR(50) NOT NULL,
+    data_nasc VARCHAR(10) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    telefone VARCHAR(20) NOT NULL,
+    PRIMARY KEY(id)
+);
