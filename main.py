@@ -55,7 +55,8 @@ def criar():
         usuario = auth.create_user_with_email_and_password(dados["Email"], dados["Senha"])
         auth.send_email_verification(usuario['idToken'])
         usuario_pf.insert(usuario['localId'], dados['Nome'], dados['Data'], dados['Email'], dados['Telefone'])
-        return f'Foi enviado um e-mail de verificação para: {dados["Email"]}'
+        mensagem = f'Foi enviado um e-mail de verificação para: {dados["Email"]}'
+        return jsonify({"Sucesso": mensagem})
 
     except requests.exceptions.HTTPError as e:
         error_json = e.args[1]
