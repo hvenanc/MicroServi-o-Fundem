@@ -2,6 +2,7 @@ import os
 import pyrebase
 import requests
 from flask import Flask, json, request, jsonify
+from flask_cors import CORS
 from dotenv import load_dotenv
 from infra.repository.usuario_pf_repository import Usuario_pfRepository
 
@@ -9,6 +10,7 @@ usuario_pf = Usuario_pfRepository()
 load_dotenv()
 
 app = Flask(__name__)
+CORS(app)
 
 firebase_config = {
 
