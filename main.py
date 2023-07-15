@@ -14,13 +14,13 @@ CORS(app)
 
 firebase_config = {
 
-    "apiKey": str(os.getenv('API_KEY_FIREBASE')),
-    "authDomain": "login---python.firebaseapp.com",
-    "projectId": "login---python",
-    "storageBucket": "login---python.appspot.com",
-    "messagingSenderId": "934624818868",
-    "appId": "1:934624818868:web:0236f9fadc8d47e83ac9e1",
-    "measurementId": "G-SNN6WKXKN3",
+    "apiKey": "AIzaSyDx0zKscovEoZH00uezzvmOyxaCHGb0w3c",
+    "authDomain": "fundem-cda3c.firebaseapp.com",
+    "projectId": "fundem-cda3c",
+    "storageBucket": "fundem-cda3c.appspot.com",
+    "messagingSenderId": "110417913882",
+    "appId": "1:110417913882:web:4888c2e37d9241abff09a3",
+    "measurementId": "G-3DH423VRH6",
     "databaseURL": ""
 }
 
