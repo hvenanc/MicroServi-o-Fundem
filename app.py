@@ -38,7 +38,8 @@ def logar():
     try:
         dados = json.loads(request.data)
         login = auth.sign_in_with_email_and_password(dados["Email"], dados["Senha"])
-        return f'ID Usuário: {login["localId"]}'
+        mensagem = {'ID Usuário': login["localId"]}
+        return jsonify(mensagem)
 
     except requests.exceptions.HTTPError as e:
         error_json = e.args[1]
