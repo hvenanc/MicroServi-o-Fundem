@@ -1,15 +1,10 @@
-import os
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from dotenv import load_dotenv
-
-load_dotenv()
-
 
 class DBConnectionHandler:
 
     def __init__(self) -> None:
-        self.__connection_string = str(os.getenv('URL_BANCO'))
+        self.__connection_string = "mysql+mysqlconnector://709i2uqaelp9ga69jil1:pscale_pw_PXSDpQ235GXkfXubFM15zLw5tctdxkfMimDkJSy8VLF@aws.connect.psdb.cloud:3306/onibus"
         self.__engine = self.__create_database_engine()
         self.session = None
 
