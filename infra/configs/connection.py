@@ -4,7 +4,7 @@ from sqlalchemy.orm import sessionmaker
 class DBConnectionHandler:
 
     def __init__(self) -> None:
-        self.__connection_string = "mysql+mysqlconnector://709i2uqaelp9ga69jil1:pscale_pw_PXSDpQ235GXkfXubFM15zLw5tctdxkfMimDkJSy8VLF@aws.connect.psdb.cloud:3306/onibus"
+        self.__connection_string = "mysql+mysqlconnector://1jfvr1r7rlj3b2y4aqe8:pscale_pw_GfF7ojDzEJZlm3RCWkK5Uh5myb5D5iJcL4VS5AhOJ1b@aws.connect.psdb.cloud:3306/onibus"
         self.__engine = self.__create_database_engine()
         self.session = None
 

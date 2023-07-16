@@ -6,7 +6,6 @@ from flask_cors import CORS
 from infra.repository.usuario_pf_repository import Usuario_pfRepository
 
 usuario_pf = Usuario_pfRepository()
-load_dotenv()
 
 app = Flask(__name__)
 CORS(app)
