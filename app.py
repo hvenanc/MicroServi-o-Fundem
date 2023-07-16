@@ -47,6 +47,9 @@ def logar():
         if error in erros_firebase.keys():
             mensagem = {"Erro": erros_firebase[error]}
             return jsonify(mensagem)
+        else:
+            mensagem = {"Erro": "Usuário não cadastrado"}
+            return jsonify(mensagem)
 
 
 @app.route('/signin', methods=['POST'])
